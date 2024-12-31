@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>1213動態視窗捲動練習
+    </h1>
+    <div menu>
+        <a href="#a" class="move">超連結1</a>
+        <a href="#b" class="move">超連結2</a>
+        <a href="#c" class="move">超連結3</a>
+        <div class="back_top">
+            <a href="#top" class="move"></a>
+        </div>
+    </div> 
+    <div id="a">區塊1</div>
+    <div id="b">區塊2</div>
+    <div id="c">區塊3</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $("a.move").on("click",function(){
+            var to = $(this).attr("href");
+            alert(to);
+            $("html, body, div").animate({
+                scroLLTop : $(to).position().top
+            },1000);
+        });
+    </script>
+</body>
+</html>

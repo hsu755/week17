@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(129, 255, 213);
+}
+.menu{
+    text-align: center;
+}
+.menu a{
+    font-size: 2rem;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: blueviolet;
+}
+.menu a:host{
+color: rgb(132, 152, 112);
+text-decoration: underline;
+}
+#a, #b, #c{
+    display: block;
+    height: 800px;
+}
+#a{
+    background-color: rgb(131, 131, 177);
+}
+#b{
+    background-color: aqua;
+}
+
+#c{
+    background-color: bisque;
+}
+
+.back_top{
+    position: fixed;
+    bottom:2%;
+    right: 2%;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+}
+.back_top{
+    font-size: 30px;
+}
